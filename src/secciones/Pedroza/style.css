@@ -1,0 +1,25 @@
+/* Asegura que la página ocupe toda la pantalla */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor de los anuncios */
+.lista-anuncios {
+  display: flex;
+  flex-direction: column; /* apilados uno debajo del otro */
+  gap: 20px;
+  align-items: center;
+}
+
+/* Estilos de cada banner */
+.banner {
+  width: 80%;       /* ancho relativo a la pantalla */
+  max-width: 900px; /* límite en pantallas grandes */
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
