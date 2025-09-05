@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import Prueba from './secciones/prueba'
-import './App.css'
+import Carvajal from './secciones/Carvajal'
+
 
 function App() {
   return (
     <>
-      <Prueba />
+    
+      <Carvajal/>
     </>
   )
 }
