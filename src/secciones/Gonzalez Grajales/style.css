@@ -1,0 +1,63 @@
+/* Estilo general del contenedor del footer */
+.ruben-site-footer {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Contenedor principal que usa Flexbox para las columnas */
+.ruben-footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo para cada columna individual */
+.ruben-footer-column {
+  flex: 1;
+  min-width: 160px;
+  margin: 0 15px 20px 15px;
+}
+
+/* Títulos de cada columna */
+.ruben-footer-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #001986;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Lista de enlaces */
+.ruben-footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ruben-footer-item {
+  margin-bottom: 10px;
+}
+
+/* Estilo de los enlaces */
+.ruben-link {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* Hover */
+.ruben-link:hover {
+  color: #00529f;
+}
+
+/* Enlace destacado */
+.ruben-highlight {
+  color: #00529f;
+  text-decoration: underline;
+}
