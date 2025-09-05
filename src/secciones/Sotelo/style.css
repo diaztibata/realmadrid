@@ -1,0 +1,290 @@
+/* Contenedor principal */
+.app-container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.crest-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) 
+          drop-shadow(0 0 16px rgba(255, 255, 255, 0.6))
+          drop-shadow(0 0 24px rgba(255, 255, 255, 0.4));
+}
+
+
+/* Contenedor de la tarjeta del partido */
+.match-card-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Tarjeta principal del partido */
+.match-card {
+  width: 100%;
+  background: linear-gradient(135deg, #16213e 0%, #1e2746 30%, #232e4a 70%, #16213e 100%);
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+/* Header del partido */
+.match-header {
+  padding: 2rem 2rem 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Sección de información de la liga */
+.league-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.league-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.league-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 0.25rem 0;
+}
+
+.league-details {
+  font-size: 0.875rem;
+  color: #d1d5db;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.league-competition {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  border-left: 1px solid #4b5563;
+  padding-left: 1.5rem;
+}
+
+/* Sección del partido */
+.match-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Escudos de equipos */
+.team-crest {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.team-crest.left {
+  flex-direction: row;
+}
+.team-crest.right {
+  flex-direction: row-reverse;
+}
+
+.team-name-right, .team-name-left {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.team-short-name {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.05em;
+}
+
+.team-short-dots {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #d1d5db;
+  letter-spacing: 0.05em;
+}
+
+/* Sección del marcador */
+.score-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.score-dash {
+  color: #9ca3af;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.time-box {
+  background-color: rgba(30, 39, 70, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #334155;
+}
+
+.match-time {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Botones de acción */
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.action-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+.action-button.primary {
+  background-color: #6c63ff;
+  color: white;
+  box-shadow: 0 2px 8px rgba(108,99,255,0.15);
+}
+
+.action-button.primary:hover {
+  background-color: #554ee1;
+}
+
+.action-button.secondary {
+  background-color: #232e4a;
+  color: white;
+  border: 1px solid #334155;
+}
+
+.action-button.secondary:hover {
+  background-color: #334155;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button-icon {
+  font-size: 1rem;
+}
+
+.button-text {
+  font-size: 0.875rem;
+}
+
+/* Indicador inferior */
+.bottom-indicator {
+  padding: 0 2rem 1rem 2rem;
+}
+
+.indicator-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #9ca3af;
+}
+
+.indicator-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #6b7280;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.chat-icon {
+  font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .match-header {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .league-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .league-competition {
+    border-left: none;
+    border-top: 1px solid #4b5563;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+  
+  .match-section {
+    gap: 1rem;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .action-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0.5rem;
+  }
+  
+  .match-header {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+  
+  .bottom-indicator {
+    padding: 0 1rem 0.75rem 1rem;
+  }
+  
+  .league-title {
+    font-size: 1.125rem;
+  }
+  
+  .team-short-name {
+    font-size: 1rem;
+  }
+  
+  .crest-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .crest-icon {
+    font-size: 1.25rem;
+  }
+}
