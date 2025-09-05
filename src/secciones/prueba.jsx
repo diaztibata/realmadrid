@@ -4,7 +4,6 @@ function Prueba() {
 
   return (
     <div>
-      prueba
     </div>
   )
 }
