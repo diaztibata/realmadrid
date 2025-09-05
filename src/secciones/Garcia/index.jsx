@@ -2,8 +2,8 @@ import './style.css'
 
 function Garcia() {
     const sectionData = {
-  titulo: "Horarios y resultados de los madridistas convocados con sus selecciones",
-  imagen: "https://assets.realmadrid.com/is/image/realmadrid/ND-CONVOCADOS-SELECCIONES-FUTBOL-RM-02-09-20251?$Desktop$&fit=wrap&wid=400" 
+  titulo: "Los goles del pleno de victorias en Liga del Real Madrid",
+  imagen: "https://assets.realmadrid.com/is/image/realmadrid/ND-LIGA-J01-RM-OSASUNA-ALEGRIA-MBAPPE-VINICIUS-02_MJ33890?$Desktop$&fit=wrap&wid=1440" 
 };
 
   return (
