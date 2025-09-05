@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #23395d 0%, #1e2a47 100%);
+}
+
+header {
+  background: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contenedor-imagen {
+  position: relative;
+  width: 90vw;
+  max-width: 2500px;
+  margin: 5px auto;
+  background: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+.contenedor-imagen img {
+  width: 100%;
+  display: block;
+}
+
+.boton-texto {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  font-weight: bold;
+  color: #23395d;
+  gap: 10px;
+}
+
+.boton-icono {
+  width: 40px;
+  height: 40px;
+  background: #4f46e5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Posiciones de los botones */
+.b1 {
+  top: 15%;
+  left: 15%;
+}
+
+.b2 {
+  top: 55%;
+  left: 10%;
+}
+
+.b3 {
+  top: 20%;
+  right: 10%;
+}
+
+.b4 {
+  bottom: 10%;
+  right: 10%;
+}
+
+footer {
+  background: #fff;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 14px;
+  color: #23395d;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
