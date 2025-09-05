@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import Prueba from './secciones/prueba'
+import Publicidad from './secciones/Juan-Pablo-Castañeda'
 import './App.css'
 
-function App() {
+function JuanPablo() {
   return (
     <>
-      <Prueba />
+      <Publicidad />
     </>
   )
 }
 
-export default App
+export default JuanPablo
