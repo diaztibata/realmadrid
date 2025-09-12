@@ -1,5 +1,10 @@
 import { useState } from 'react'
 
+import Prueba from './secciones/prueba'
+import Martin from './secciones/MartinRamirez'
+import './App.css'
+
+
 import Publicidad from './secciones/Juan-Pablo-Castañeda'
 
 import Riaño from './secciones/Riaño'
@@ -16,9 +21,15 @@ import Carvajal from './secciones/Carvajal'
 
 import Murillo from './secciones/Murillo'
 
+
 function App() {
   return (
     <>
+
+      <Martin />
+      <Prueba />
+    </>
+  )
           <Carvajal />
       <TorresSantiago />
       <Riaño />
@@ -33,6 +44,7 @@ function App() {
 
 </>
 )
+
 }
 
 export default App
