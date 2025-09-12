@@ -1,7 +1,11 @@
 import { useState } from 'react'
+
+import Publicidad from './secciones/Juan-Pablo-Castañeda'
+
 import Prueba from './secciones/prueba'
 
 import TorresSantiago from './secciones/TorresSantiago'
+
 import './App.css'
 import './secciones/TorresSantiago/styles.css'
 function App() {
@@ -18,9 +22,12 @@ import Puentes from './secciones/Puentes'
 
 
 
-function App() {
+function JuanPablo() {
   return (
     <>
+
+      <Publicidad />
+
     <Guerrero />
     <TrophyBoard />
       <Prueba />
@@ -30,4 +37,4 @@ function App() {
   )
 }
 
-export default App
+export default JuanPablo
