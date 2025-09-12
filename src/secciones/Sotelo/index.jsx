@@ -1,5 +1,5 @@
 import "./style.css";
-// Datos del partido
+
 const matchData = {
   league: {
     name: "La Liga",
@@ -107,7 +107,6 @@ function LeagueInfo({ matchData }) {
   );
 }
 
-// Componente para la sección del partido
 function MatchSection({ matchData }) {
   return (
     <div className="match-section">
