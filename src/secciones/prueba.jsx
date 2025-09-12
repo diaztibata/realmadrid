@@ -1,12 +1,12 @@
-import App from './Publicidad.jsx'
 
-function JuanPablo() {
+
+function Prueba() {
 
   return (
     <div>
-      Juan
+      prueba
     </div>
   )
 }
 
-export default JuanPablo
+export default Prueba
