@@ -5,13 +5,13 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Contenedor principal */
+
 .app {
   min-height: 100vh;
   padding: 3rem 2rem;
 }
 
-/* Títulos principales */
+
 .titulo {
   font-size: 2rem;
   font-weight: bold;
@@ -24,14 +24,14 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Grid de colecciones */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
-/* Tarjeta */
+
 .card {
   background: white;
   border-radius: 1rem;
@@ -43,30 +43,30 @@ body {
   justify-content: space-between;
 }
 
-/* Imagen centrada */
+
 .imagen {
   display: block;
   max-width: 100%;
   max-height: 380px;
   margin: 0 auto;
-  object-fit: contain; /* mantiene proporciones sin recortar */
+  object-fit: contain; 
 }
 
-/* Contenido debajo de la imagen */
+
 .contenido {
   padding: 1rem;
 }
 
-/* Título dentro de la tarjeta */
+
 .contenido h3 {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-/* Botón */
+
 .boton {
-  background: #4f46e5; /* azul */
+  background: #4f46e5; 
   color: white;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
@@ -77,5 +77,5 @@ body {
 }
 
 .boton:hover {
-  background: #4338ca; /* azul más oscuro */
+  background: #4338ca; 
 }
