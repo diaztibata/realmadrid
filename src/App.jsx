@@ -4,6 +4,9 @@ import Publicidad from './secciones/Juan-Pablo-Castañeda'
 
 import Prueba from './secciones/prueba'
 
+import Garcia from './secciones/Garcia'
+import './App.css'
+
 import Riaño from './secciones/Riaño'
 
 
@@ -14,6 +17,8 @@ import './secciones/TorresSantiago/styles.css'
 function App() {
   return (
     <>
+      <Garcia />
+
       <TorresSantiago />
 
 import Guerrero from './secciones/Guerrero/index'
@@ -37,6 +42,7 @@ function JuanPablo() {
     <TrophyBoard />
       <Prueba />
       <Puentes />
+
     </>
   )
 }

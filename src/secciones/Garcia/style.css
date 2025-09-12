@@ -1,0 +1,71 @@
+:root{
+  --right-bg: #f5f9fd; /* gris claro del panel derecho */
+  --title-color: #08203a; /* color del texto */
+}
+
+* { box-sizing: border-box; }
+body, #root { height: 100%; margin: 0; font-family: 'Montserrat', sans-serif; }
+
+.page{
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  background: #ffffff;
+}
+
+/* contenedor principal (borde redondeado grande como en la captura) */
+.rm-section{
+  width: min(1200px, 95%);
+  display: flex;
+  border-radius: 28px;
+  overflow: hidden; /* para que los dos paneles respeten el radio */
+  box-shadow: 0 10px 30px rgba(2,18,34,0.06);
+  align-items: stretch;
+  background: transparent;
+}
+
+/* Lado izquierdo - imagen */
+.rm-visual{
+  width: 65%;
+  min-height: 360px; /* aprox. altura de la captura */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000; /* fallback */
+}
+
+.rm-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* recorta como en la web */
+  display: block;
+}
+
+/* Lado derecho - panel claro con texto centrado */
+.rm-info{
+  width: 35%;
+  background: var(--right-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+/* Título */
+.rm-title{
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--title-color);
+  text-align: center;
+  max-width: 360px;
+}
+
+/* Responsive: en móvil apila imagen + texto */
+@media (max-width: 900px){
+  .rm-section { flex-direction: column; border-radius: 20px; }
+  .rm-visual { width: 100%; min-height: 260px; }
+  .rm-info { width: 100%; padding: 28px; }
+  .rm-title { font-size: 18px; }
+}
