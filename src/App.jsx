@@ -4,6 +4,9 @@ import Publicidad from './secciones/Juan-Pablo-Castañeda'
 
 import Prueba from './secciones/prueba'
 
+import Riaño from './secciones/Riaño'
+
+
 import TorresSantiago from './secciones/TorresSantiago'
 
 import './App.css'
@@ -26,13 +29,14 @@ function JuanPablo() {
   return (
     <>
 
+      <Riaño />
+
       <Publicidad />
 
     <Guerrero />
     <TrophyBoard />
       <Prueba />
       <Puentes />
-
     </>
   )
 }
